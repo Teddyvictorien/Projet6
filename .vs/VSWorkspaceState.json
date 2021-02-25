@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\backend",
-    "\\frontend"
+    "\\backend\\controllers",
+    "\\backend\\models"
   ],
-  "SelectedNode": "\\frontend\\package.json",
+  "SelectedNode": "\\backend",
   "PreviewInSolutionExplorer": false
 }
