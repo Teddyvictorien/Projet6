@@ -3,8 +3,11 @@
     "",
     "\\backend",
     "\\backend\\controllers",
-    "\\backend\\models"
+    "\\backend\\images",
+    "\\backend\\middleware",
+    "\\backend\\models",
+    "\\backend\\routes"
   ],
-  "SelectedNode": "\\backend",
+  "SelectedNode": "\\backend\\controllers\\user.js",
   "PreviewInSolutionExplorer": false
 }

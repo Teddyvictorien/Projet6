@@ -3,15 +3,11 @@ const Bcrypt = require('bcrypt');
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 const MaskData = require('maskdata')
-//const Validator = require('validatorjs');
-//const passwordRegex = /^(?=.* [A - Z])(?=.* [a - z])(?=.*\d)(?=.* [-+.! * $@% _]) ([-+!.* $@% _\w]{ 8, 80 })$/;
+
 
 
 
 exports.signup = (req, res, next) => {
-    //value = req.body.password;
-    //console.log(value)
-    //Validator.registrer('strict', value => passwordRegex.test(value)),
     Bcrypt.hash(req.body.password, 10)
         .then(hash => {      
             const maskedEmail = MaskData.maskEmail2(req.body.email);
